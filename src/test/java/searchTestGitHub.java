@@ -11,7 +11,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class searchTestGitHub {
     @BeforeAll
     static void beforeAll() {
-        Configuration.holdBrowserOpen = true;
+        Configuration.holdBrowserOpen = false;
     }
 
     @Test
