@@ -1,14 +1,11 @@
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.conditions.Href;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.openqa.selenium.WebElement;
-
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.*;
 import static com.codeborne.selenide.Selenide.*;
 
-public class searchTestGitHub {
+public class SearchTestGitHub {
     @BeforeAll
     static void beforeAll() {
         Configuration.holdBrowserOpen = false;
