@@ -14,7 +14,9 @@ public class HoverTest {
     void testHoverGithub(){
     //Открыть GitGub
     open("https://github.com/");
-    $("d-lg-flex list-style-none").$(byText("Solutions")).hover();
+    $(byText("Solutions")).hover();
+    $("[href='/enterprise']").click();
+    //$("d-lg-flex list-style-none").$(byText("Solutions")).hover();
     }
 
 
