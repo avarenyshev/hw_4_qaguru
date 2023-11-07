@@ -14,6 +14,7 @@ public class HoverTest {
     void testHoverGithub(){
     //Открыть GitGub
     open("https://github.com/");
+    $("#d-lg-flex list-style-none").$(byText("solutions")).hover();
     }
 
 
