@@ -16,6 +16,8 @@ public class HoverTest {
     open("https://github.com/");
     $(byText("Solutions")).hover();
     $("[href='/enterprise']").click();
+    $("#hero-section-brand-heading").shouldHave(text("The AI-powered\n" +
+            "developer platform"));
     //$("d-lg-flex list-style-none").$(byText("Solutions")).hover();
     }
 
