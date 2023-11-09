@@ -14,8 +14,10 @@ public class HoverTest {
     void testHoverGithub(){
     //Открыть GitGub
     open("https://github.com/");
+    //Перейти в раздел "Solutions"
     $(byText("Solutions")).hover();
     $("[href='/enterprise']").click();
+    //Проверить наличие заголовка
     $("#hero-section-brand-heading").shouldHave(text("The AI-powered\n" +
             "developer platform"));
     }
