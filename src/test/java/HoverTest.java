@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selenide.*;
 public class HoverTest {
     @BeforeAll
     static void beforeAll() {
-        Configuration.holdBrowserOpen = true;
+        Configuration.holdBrowserOpen = false;
     }
 
     @Test
@@ -18,7 +18,6 @@ public class HoverTest {
     $("[href='/enterprise']").click();
     $("#hero-section-brand-heading").shouldHave(text("The AI-powered\n" +
             "developer platform"));
-    //$("d-lg-flex list-style-none").$(byText("Solutions")).hover();
     }
 
 
