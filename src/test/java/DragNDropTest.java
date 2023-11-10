@@ -1,3 +1,4 @@
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.BeforeAll;
@@ -14,6 +15,7 @@ public class DragNDropTest {
         //открываем https://the-internet.herokuapp.com/drag_and_drop
         open("https://the-internet.herokuapp.com/drag_and_drop");
     SelenideElement selenideElement = $(element("#column-a")).dragAndDropTo("#column-b");
+    $("#column-a").shouldHave(Condition.value("<header>B</header>"));
 }
 
 }
