@@ -1,4 +1,5 @@
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Selenide.*;
@@ -12,7 +13,7 @@ public class DragNDropTest {
     void dragNDroptest(){
         //открываем https://the-internet.herokuapp.com/drag_and_drop
         open("https://the-internet.herokuapp.com/drag_and_drop");
-        $(element("column-a")).dragAndDropTo($("column-b");
+    SelenideElement selenideElement = $(element("#column-a")).dragAndDropTo("#column-b");
 }
 
 }
