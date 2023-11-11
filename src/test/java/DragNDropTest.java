@@ -15,8 +15,11 @@ public class DragNDropTest {
     void dragNDroptest() {
         //открываем https://the-internet.herokuapp.com/drag_and_drop
         open("https://the-internet.herokuapp.com/drag_and_drop");
+        $("#column-a").shouldHave(exactText("A"));
+        $("#column-b").shouldHave(exactText("B"));
         //Перетаскиваем А на Б
-        SelenideElement selenideElement = $(element("#column-a")).dragAndDropTo("#column-b");
+        //SelenideElement selenideElement = $(element("#column-a")).dragAndDropTo("#column-b");
+        $(element("#column-a")).dragAndDropTo("#column-b");
         //Проверяем результат
         $("#column-a").shouldHave(exactText("B"));
         $("#column-b").shouldHave(exactText("A"));
